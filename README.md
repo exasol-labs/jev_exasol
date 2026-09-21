@@ -1,6 +1,6 @@
 # jev_exasol
 
-https://github.com/user-attachments/assets/61b575ca-170c-4e9f-a287-d036a9e40b8e
+<img width="720" height="406" alt="Scoring invoices with Jev inside Exasol" src="https://github.com/user-attachments/assets/92879a7e-fa3a-48f0-bd46-01e0cca1e634" />
 
 Running [TypeSafe](https://typesafe.ai) **Jev** judgments inside Exasol as UDFs.
 
