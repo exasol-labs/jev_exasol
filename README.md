@@ -1,4 +1,4 @@
-# jev_exasol
+# Jev + Exasol
 
 <img width="720" height="406" alt="Scoring invoices with Jev inside Exasol" src="https://github.com/user-attachments/assets/92879a7e-fa3a-48f0-bd46-01e0cca1e634" />
 
