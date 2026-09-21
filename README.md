@@ -63,7 +63,7 @@ money columns as numbers.
 - An Exasol database you can reach, plus admin rights (`ALTER SYSTEM`).
 - **Docker and WSL** (or Linux/macOS) to build the SLC — `exaslct` has no native
   Windows support.
-- A TypeSafe API key.
+- A TypeSafe API key, from [console.typesafe.ai](https://console.typesafe.ai).
 - Python on the host with `pyexasol` and `python-dotenv` (plus `typesafe-sdk` if
   you want to run `main.py`).
 - **UDFs need outbound HTTPS access** to `api.typesafe.ai`. That is the whole
@@ -72,6 +72,10 @@ money columns as numbers.
 ## Setup
 
 ### 1. API key
+
+Get one from the TypeSafe console at
+**[console.typesafe.ai](https://console.typesafe.ai)** — sign in with Google or
+an emailed code, then create a key.
 
 ```bash
 echo 'TYPESAFE_API_KEY=sk-...' > .env      # gitignored
