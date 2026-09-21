@@ -1,5 +1,7 @@
 # jev_exasol
 
+https://github.com/user-attachments/assets/61b575ca-170c-4e9f-a287-d036a9e40b8e
+
 Running [TypeSafe](https://typesafe.ai) **Jev** judgments inside Exasol as UDFs.
 
 Jev answers a yes/no question about a piece of state and returns a *probability*
