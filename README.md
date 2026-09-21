@@ -60,7 +60,10 @@ money columns as numbers.
 
 ## Requirements
 
-- An Exasol database you can reach, plus admin rights (`ALTER SYSTEM`).
+- An Exasol database you can reach, plus admin rights (`ALTER SYSTEM`). If you
+  don't have one, [Exasol Personal](https://www.exasol.com/personal/) is free —
+  it runs natively on macOS, under Docker/Podman on Linux and WSL, or deploys
+  into your own cloud account.
 - **Docker and WSL** (or Linux/macOS) to build the SLC — `exaslct` has no native
   Windows support.
 - A TypeSafe API key, from [console.typesafe.ai](https://console.typesafe.ai).
