@@ -30,6 +30,7 @@ parallel UDF instances.
 | `exasol/verify.py` | Smoke test: container contents, scalar UDF, set UDF. |
 | `main.py` | The standalone SDK example the UDFs were ported from. Run this first to check your API key works. |
 | `filter_portugal.py` | Unrelated local CSV helper. |
+| `invoice_dataset/newest_invoices_data.csv` | The 10,000-row reference invoice set to load into `BOOK_KEEPING.INVOICES` in step 6. |
 
 ## How it works
 
