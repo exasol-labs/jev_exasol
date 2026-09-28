@@ -5,13 +5,15 @@ from typesafe_sdk import AsyncTypeSafeClient, Choice, Noul, Score
 
 
 async def main() -> None:
+    """Test the TypeSafe client SDK outside of the Exasol before integrating it in Exasol to see if the API is working as expected."""
+
     load_dotenv()
 
     async with AsyncTypeSafeClient() as client:
         response = await client.system_one(
             state={"document": "I was charged twice. Please fix this ASAP."},
             questions={
-                "billing": Noul(instructions="Is this ticket about databases?"),
+                "billing": Noul(instructions="Is this ticket about billing?"),
                 "tone": Choice(
                     instructions="What is the customer's tone?",
                     criteria={"calm": None, "frustrated": None, "angry": None},
@@ -20,6 +22,7 @@ async def main() -> None:
                     instructions="How urgent is this ticket?",
                     criteria=["can wait", "this week", "today"],
                 ),
+
             },
         )
 
