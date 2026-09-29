@@ -29,7 +29,7 @@ All commands below are run from this folder (`usecases/invoice_classification`).
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | `main.py`                                  | Standalone TypeSafe SDK example. Run it first to check your API key works.                                               |
 | `exasol/deploy.py`                         | Registers the language alias and the API-key connection, installs `udfs.sql`.                                            |
-| `exasol/udfs.sql`                          | Three demo UDFs — `JEV_CLASSIFY` (scalar, JSON out), `JEV_CLASSIFY_BATCH` (set, concurrent), `SLC_VERSIONS`. Used by `verify.py`. |
+| `exasol/udfs.sql`                          | Two demo UDFs — `JEV_CLASSIFY` (scalar, JSON out) and `JEV_CLASSIFY_BATCH` (set, concurrent). Installed by `deploy.py`, called by `verify.py`. |
 | `exasol/verify.py`                         | Smoke test: container contents, scalar UDF, set UDF.                                                                     |
 | `exasol/jev_invoice_ai_score.sql`          | The scoring UDF. Python SET script, takes the question as a parameter, one concurrent API call per row.                  |
 | `exasol/refresh_ai_invoices.sql`           | Lua orchestration script. Scores every invoice, rebuilds the result view, returns the matching rows.                     |
