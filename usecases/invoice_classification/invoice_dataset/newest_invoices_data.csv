@@ -1,4 +1,4 @@
-id_invoice,issuedDate,country,service,total,discount,tax,invoiceStatus,balance,dueDate,client
+ID_INVOICE,ISSUED_DATE,COUNTRY,SERVICE,TOTAL,DISCOUNT,TAX,INVOICE_STATUS,BALANCE,DUE_DATE,CLIENT
 67,2023-07-10,Cuba,AI Solution,8685.46,48.85,593.26,Paid,9229.87,2023-08-03,Company B
 57,2022-10-05,Uruguay,Mobile App Development,3196.11,437.68,131.34,Pending,2889.77,2022-10-19,Company A
 79,2022-08-01,Liberia,UI/UX Design,294.28,48.23,7.74,Overdue,253.79,2022-08-09,Company D
