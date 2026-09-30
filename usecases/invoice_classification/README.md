@@ -21,6 +21,16 @@ EXECUTE SCRIPT TYPESAFE_LAB.REFRESH_AI_INVOICES(
 This scores all 10,000 invoices in `BOOK_KEEPING.INVOICES` (one API call per
 row) and returns the ones that matched, ordered by confidence.
 
+## Why not just SQL?
+
+`service_line` has six distinct values, so SQL plus six calls could answer the
+example question. The demo makes 10,000 calls on purpose, to show speed: Jev
+scores every row in about 50 seconds and returns a calibrated probability. A
+general-purpose LLM would be much slower and more expensive, and you would
+have to parse its free-text answers. That speed matters on data where every
+row is different, such as descriptions, notes or emails, because SQL has
+nothing to group by there.
+
 All commands below are run from this folder (`usecases/invoice_classification`).
 
 ## Contents
