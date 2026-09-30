@@ -25,6 +25,6 @@ Every use case needs roughly the same setup. The details are in each use case's 
 - An Exasol database with admin rights. [Exasol Personal](https://www.exasol.com/personal/)
   is free if you don't have one. You can also use
   [Exasol Docker DB](https://github.com/exasol/docker-db) as an alternative.
-- A TypeSafe API key from [console.typesafe.ai](https://console.typesafe.ai).
+- A TypeSafe API key from [console.typesafe.ai](https://console.typesafe.ai) or any other Decision model (e.g. Decision API from OpenAI).
 - Docker and WSL (or Linux/macOS) to build the Script Language Container.
-- Outbound HTTPS access from the Exasol UDFs to `api.typesafe.ai`.
+- Outbound HTTPS access from the Exasol UDFs to `API`.
