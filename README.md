@@ -1,8 +1,8 @@
-# Decisions models + Exasol
+# Decision models + Exasol
 
 A collection of solutions built with **Decision models** such as [TypeSafe](https://typesafe.ai)'s **Jev** or OpenAI's Decision API making decisions on Exasol tables.
 
-Decision models like **Jev** answers a question about a piece of state and returns a calibrated
+Decision models like **Jev** answer a question about a piece of state and returns a calibrated
 _probability_ rather than a string, so the answer can be used directly in SQL —
 filtered, thresholded, joined, aggregated. Each solution here wires the TypeSafe
 Python SDK into Exasol through a custom Script Language Container (SLC) and
